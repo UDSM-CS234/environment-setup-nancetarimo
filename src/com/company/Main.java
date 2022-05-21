@@ -1,14 +1,15 @@
 package com.company;
 
-public class Main {
+public class lab1 {
 
     public static void main(String[] args) {
-        double gravity = -9.81; // Earth's gravity in m/s^2
-        double initialVelocity = 0.0;
-        double fallingTime = 10.0;
-        double initialPosition = 0.0;
-        double finalPosition = 0.0;
-        System.out.println("The object's position after " + fallingTime +
-                " seconds is " + finalPosition + " m.");
+        double a = -9.81; // a= Earth's gravity in m/s^2
+        double vi = 0.0; // vi= initial velocity
+        double t = 10.0; // t= falling time
+        double xi = 0.0; // xi= initial position
+        double xt;
+        xt = (0.5*a*(t*t)) + vi*t+ xi;
+        System.out.println("\n \nThe object's position after " + t +
+                " seconds is " + xt + " m. \n \n");
     }
 }
